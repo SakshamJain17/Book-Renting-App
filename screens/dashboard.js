@@ -7,11 +7,11 @@ export default class Dashboard extends Component {
         return (
             <View>
             <TouchableOpacity style={styles.button}>
-                <Text>a</Text>
+                <Text style= {styles.text}>a</Text>
                 </TouchableOpacity>
             
-            <TouchableOpacity style={styles.button1}>
-                <Text>b</Text>
+            <TouchableOpacity style={styles.button}>
+                <Text style= {styles.text}>b</Text>
                 </TouchableOpacity>
                 </View>
             )
@@ -21,13 +21,15 @@ const styles= StyleSheet.create({
 
     button: {
         backgroundColor: 'green',
-        width: 100,
-        height: 100,
+        width: RFValue(250),
+    height: RFValue(50),
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    borderRadius: RFValue(30)
     },
-    button1: {
-        backgroundColor: 'green',
-        width: 100,
-        height: 100,
-
+    text: {
+        fontSize: RFValue(30),
+ 
     }
 })    
